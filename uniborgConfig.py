@@ -6,7 +6,7 @@ from pymongo import MongoClient
 class Config(object):
     LOGGER = True
     APP_ID = int(os.environ.get("APP_ID", 6))
-    API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
+    API_HASH = os.environ.get("API_HASH", "0e1467f6a3c698f51a817734fc05ef6c")
     SCREEN_SHOT_LAYER_ACCESS_KEY = os.environ.get(
         "SCREEN_SHOT_LAYER_ACCESS_KEY", None)
     OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
@@ -34,7 +34,7 @@ class Config(object):
     NO_LOG_P_M_S = bool(os.environ.get("NO_LOG_P_M_S", True))
     THUMB_IMAGE = os.environ.get(
         "THUMB_IMAGE",
-        "https://telegra.ph/file/3518fa8ef912f5590f35e.jpg")
+        "https://telegra.ph/file/8a3ef50c34c09ade6ea8a.jpg")
     GENIUS_API_TOKEN = os.environ.get("GENIUS_API_TOKEN", None)
     MAX_MESSAGE_SIZE_LIMIT = 4095
     UB_BLACK_LIST_CHAT = set(
