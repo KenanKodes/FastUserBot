@@ -1,7 +1,7 @@
 {
-  "name": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝",
+  "name": "⚝ FᴀsᴛUsᴇʀBᴏᴛ ⚝🇦🇿",
   "description": "Telegram UserBot",
-  "logo": "https://telegra.ph/file/2269e1ed5b9a3b0444361.jpg",
+  "logo": "https://telegra.ph/file/8a3ef50c34c09ade6ea8a.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -10,9 +10,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Silgimusicbot/SilgiUserbot",
-  "website":   "https://t.me/silgiuserbot",
-  "success_url": "https://t.me/silgiuserbot",
+  "repository": "https://github.com/KenanKodes/FastUserBot",
+  "website":   "https://t.me/TheFastSupp",
+  "success_url": "https://t.me/TheFastSupp",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -54,7 +54,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Bura toxunmayın.",
-      "value": "https://github.com/Silgimusicbot/SilgiUserbot",
+      "value": "https://github.com/KenanKodes/FastUserBot",
       "required": true
     },
     "COUNTRY": {
