@@ -7,7 +7,7 @@ import requests
 from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 from telethon.tl.functions.channels import GetMessagesRequest
-from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, DTO_VERSION, PATTERNS
+from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, FAST_VERSION, PATTERNS
 from .modules import ALL_MODULES
 import userbot.modules.sql_helper.mesaj_sql as MSJ_SQL
 import userbot.modules.sql_helper.galeri_sql as GALERI_SQL
@@ -114,10 +114,10 @@ def extractCommands(file):
                         Komutlar.append(KomutStr)
 
             
-            Dtopy = re.search('\"\"\"DTOPY(.*)\"\"\"', FileRead, re.DOTALL)
-            if not Dtopy == None:
-                Dtopy = Dtopy.group(0)
-                for Satir in Dtopy.splitlines():
+            Fastpy = re.search('\"\"\"FASTPY(.*)\"\"\"', FileRead, re.DOTALL)
+            if not Fastpy == None:
+                Fastpy = Fastpy.group(0)
+                for Satir in Fastpy.splitlines():
                     if (not '"""' in Satir) and (':' in Satir):
                         Satir = Satir.split(':')
                         Isim = Satir[0]
@@ -138,7 +138,7 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    dtobl = requests.get('https://raw.githubusercontent.com/Silgimusicbot/SilgiUserbot/master/upx.json').json()
+    dtobl = requests.get('https://raw.githubusercontent.com/KenanKodes/FastUserBot/master/upx.json').json()
     if idim in dtobl:
         bot.disconnect()
 
@@ -153,7 +153,7 @@ try:
 
     
     PLUGIN_MESAJLAR = {}
-    ORJ_PLUGIN_MESAJLAR = {"alive": "`⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝` **aktivdir...**", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Bye-bye mən qrupdan çıxdım 🥰`", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, susduruldu!`", "approve": "{mention}`, mənə mesaj göndərə bilərsən!`", "disapprove": "{mention}`, artıq mənə mesaj göndərə bilmərsən!`", "block": "{mention}`, bloklandın!`", "restart": "`Bot yenidən başladılır...`"}
+    ORJ_PLUGIN_MESAJLAR = {"alive": "⚝ ƒᴀѕᴛυѕᴇʀϐᴏᴛ αϲτινє...⚝🇦🇿", "afk": f"`{str(choice(AFKSTR))}`", "kickme": "`Bye-bye mən qrupdan çıxdım 🥰`", "pm": UNAPPROVED_MSG, "dızcı": str(choice(DIZCILIK_STR)), "ban": "{mention}`, banlandı!`", "mute": "{mention}`, susduruldu!`", "approve": "{mention}`, mənə mesaj göndərə bilərsən!`", "disapprove": "{mention}`, artıq mənə mesaj göndərə bilmərsən!`", "block": "{mention}`, bloklandın!`", "restart": "`Bot yenidən başladılır...`"}
 
     PLUGIN_MESAJLAR_TURLER = ["alive", "afk", "kickme", "pm", "dızcı", "ban", "mute", "approve", "disapprove", "block", "restart"]
     for mesaj in PLUGIN_MESAJLAR_TURLER:
@@ -231,7 +231,7 @@ for module_name in ALL_MODULES:
 
 LOGS.info("Botunuz işleyir! Her hansi bir söhbete .alive yazaraq Test edin."
           " Yardıma ehtiyacınız varsa, Dəstək qrupumuza buyurun t.me/silgiuserbot")
-LOGS.info(f"Bot versiyası: ⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ {DTO_VERSION}")
+LOGS.info(f"Bot versiyası: ⚝ ƒᴀѕᴛυѕᴇʀϐᴏᴛ ⚝🇦🇿 {FAST_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
