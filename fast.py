@@ -1,5 +1,5 @@
-MESAJ="⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ S T R I N G SESSION"
-MESAJ+="\nTelegram: @silgiuserbot"
+MESAJ="⚝ FᴀsᴛUsᴇʀBᴏᴛ ⚝🇦🇿 S T R I N G SESSION"
+MESAJ+="\nTelegram: @TheFastSupp"
 pkg upgrade
 clear
 echo -e $MESAJ
@@ -15,9 +15,9 @@ pip install bs4
 clear
 echo -e $MESAJ
 echo "Fayl yazılır..."
-curl "https://raw.githubusercontent.com/Silgimusicbot/SilgiUserbot/master/silgiub.py" --output "silgiub.py"
+curl "https://raw.githubusercontent.com/KenanKodes/FastUserBot/master/fast.py" --output "fast.py"
 clear
 echo -e $MESAJ
 echo "Qurulum Bitdi! İndi String Ala Bilərsiz."
 clear
-python silgiub.py
+python fast.py
