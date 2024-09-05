@@ -69,15 +69,15 @@ def register(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     dtotext = str(check.text)
-                    text = "**✥ ⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ ΣRROR ✥**\n\n"
-                    link = "[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ Dəstək Qrupuna](https://t.me/silgiuserbot)"
+                    text = "**✥ ⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ ΣRROR ✥**\n\n"
+                    link = "[⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ Dəstək Qrupuna](https://t.me/TheFastSupp)"
                     if len(dtotext)<10:
                         text += f"⌨️ **Əmr:** {dtotext}\n\n"
                     text += "**Xəta baş verdi ❗**\n"
                     text += f"**ℹ️ Bu log'u** {link} **göndərin.**"
                     text += "**Xətanın nə oluğunu öyrənin**\n"
                     
-                    ftext = "--------⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ ΣRROR--------\n"
+                    ftext = "--------⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ ΣRROR--------\n"
                     ftext += "\nTarix: " + date
                     ftext += "\nQrup ID: " + str(check.chat_id)
                     ftext += "\nGöndərən istifadəçinin ID: " + str(check.sender_id)
@@ -87,7 +87,7 @@ def register(**args):
                     ftext += str(format_exc())
                     ftext += "\n\nXəta mətni:\n"
                     ftext += str(sys.exc_info()[1])
-                    ftext += "\n\n--------⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ ΣRROR--------"
+                    ftext += "\n\n--------⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ ΣRROR--------"
 
                     command = "git log --pretty=format:\"%an: %s\" -0"
 
