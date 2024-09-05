@@ -151,7 +151,7 @@ async def pinstall(event):
     for T in TEHLUKELI:
       if re.search(T, dosy):
          os.remove(fayl)
-         return await event.edit(f"**Yüklənmə dayandırıldı!**\n{plugin.file.name} faylında {T} tapıldı. Bu zərərli bir plugindir!\n\nƏgər siz bunun güvənli olduğunu düşünür və ya plugini özünüz üçün yaratmısınızsa bunu @silgiuserbot adminlərinə bildirin")
+         return await event.edit(f"**Yüklənmə dayandırıldı!**\n{plugin.file.name} faylında {T} tapıldı. Bu zərərli bir plugindir!\n\nƏgər siz bunun güvənli olduğunu düşünür və ya plugini özünüz üçün yaratmısınızsa bunu @TheFastSupp adminlərinə bildirin")
     if re.search(r"@tgbot\.on\(.*pattern=(r|)\".*\".*\)", dosy):
         komu = re.findall(r"\(.*pattern=(r|)\"(.*)\".*\)", dosy)
         komutlar = ""
@@ -169,7 +169,7 @@ async def pinstall(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.silgi {cmdhelp}** `yazın.`')
+                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.fast {cmdhelp}** `yazın.`')
             else:
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
                 userbot.cmdhelp.CmdHelp(fayl).add_warning('Əmrlər tapılmadı!').add()
@@ -178,12 +178,12 @@ async def pinstall(event):
             if re.search(r'CmdHelp\(.*\)', dosy):
                 cmdhelp = re.findall(r"CmdHelp\([\"'](.*)[\"']\)", dosy)[0]
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.silgi {cmdhelp}** `yazın.`')
+                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.fast {cmdhelp}** `yazın.`')
             else:
                 dosyaAdi = plugin.file.name.replace('.py', '')
                 extractCommands(fayl)
                 await plugin.forward_to(PLUGIN_CHANNEL_ID)
-                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.silgi {dosyaAdi}** `yazın.`')
+                return await event.edit(f'__📥 Plugin uğurla yükləndi!__\n`ℹ️ Daha ətraflı məlumat almaq üçün` **.fast {dosyaAdi}** `yazın.`')
 
 @register(outgoing=True, pattern="^.premove ?(.*)")
 async def premove(event):
