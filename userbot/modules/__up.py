@@ -12,7 +12,7 @@ LANG = get_value("__up")
 
 # ████████████████████████████████ #
 
-@register(outgoing=True, pattern="^.silgi(?: |$)(.*)")
+@register(outgoing=True, pattern="^.fast(?: |$)(.*)")
 async def dto(event):
     args = event.pattern_match.group(1).lower()
     if args:
