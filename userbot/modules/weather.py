@@ -28,7 +28,7 @@ else:
 
 async def get_tz(con):
     """ Verilən ölkənin hava proqnozunu göstərər. """
-    """ @aragon12 və @zakaryan2004'a təşəkkürlər. """
+    """ @LocalCoder628 və @xNatiqBey'e təşəkkürlər. """
     for c_code in c_n:
         if con == c_n[c_code]:
             return tz(c_tz[c_code][0])
