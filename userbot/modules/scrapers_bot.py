@@ -144,32 +144,32 @@ async def memeyap(event):
         if reply.photo:
             Resim = await reply.download_media()
         elif reply.sticker and reply.file.ext == ".webp":
-            if os.path.exists("./SilgiSticker.png"):
-                os.remove("./SilgiSticker.png")
+            if os.path.exists("./FastSticker.png"):
+                os.remove("./FastSticker.png")
 
             foto = await reply.download_media()
             im = Image.open(foto).convert("RGB")
-            im.save("SilgiSticker.png", "png")
-            Resim = "SilgiSticker.png"
+            im.save("FastSticker.png", "png")
+            Resim = "FastSticker.png"
         elif reply.sticker and reply.file.ext == ".tgs":
             sticker = await reply.download_media()
-            os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' SilgiSticker.png")
+            os.system(f"lottie_convert.py --frame 0 -if lottie -of png '{sticker}' FastSticker.png")
             os.remove(sticker)
-            Resim = "SilgiSticker.png"
+            Resim = "FastSticker.png"
         elif reply.media:
             Resim = await reply.download_media()
             Sure = os.system("ffmpeg -i '"+Resim+"' 2>&1 | grep Duration | awk '{print $2}' | tr -d , | awk -F ':' '{print ($3+$2*60+$1*3600)/2}'``")
-            os.system(f"ffmpeg -i '{Resim}' -vcodec mjpeg -vframes 1 -an -f rawvideo -ss {Sure} SilgiThumb.jpg")
+            os.system(f"ffmpeg -i '{Resim}' -vcodec mjpeg -vframes 1 -an -f rawvideo -ss {Sure} FastThumb.jpg")
             os.remove(Resim)
-            Resim = 'SilgiThumb.jpg'
+            Resim = 'FastThumb.jpg'
         else:
             return await event.edit(LANG['REPLY_TO_MEME'])
             
-        if os.path.exists("./Silgimeme.png"):
-            os.remove("./Silgimeme.png")
+        if os.path.exists("./Fastmeme.png"):
+            os.remove("./Fastmeme.png")
 
         MemeYap(Resim, Text, font, Bottom, BottomText)
-        await event.client.send_file(event.chat_id, "./Silgimeme.png", reply_to=reply)
+        await event.client.send_file(event.chat_id, "./Fastmeme.png", reply_to=reply)
         await event.delete()
         os.remove(Resim)
     else:
@@ -207,9 +207,9 @@ async def scan(event):
          await event.client.send_message(chat, "English")
          await event.edit(LANG['WAIT_EDIT'])
 
-         response = conv.wait_event(events.NewMessage(incoming=True,from_users=161163358))
+         response = conv.wait_event(events.NewMessage(incoming=True,from_users=6301711192))
          await event.client.forward_messages(chat, reply_message)
-         response = conv.wait_event(events.NewMessage(incoming=True,from_users=161163358))
+         response = conv.wait_event(events.NewMessage(incoming=True,from_users=6301711192))
          response = await response
          
          await event.edit(f"**{LANG['SCAN_RESULT']}:**\n {response.message.message}")
