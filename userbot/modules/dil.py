@@ -41,14 +41,14 @@ async def dil(event):
         if event.is_reply:
             reply = await event.get_reply_message()
             if ((len(reply.file.name.split(".")) >= 1) and (not reply.file.name.split(".")[1] == "dtojson")):
-                return await event.edit("`Xaiş keçərli bir` **DTOJSON** `faylı verin!`")
+                return await event.edit("`Xaiş keçərli bir` **FASTJSON** `faylı verin!`")
 
             dosya = await reply.download_media()
 
             try:
                 dosya = loads(open(dosya, "r").read())
             except JSONDecodeError:
-                return await event.edit("`Xaiş keçərli bir` **DTOJSON** `faylı verin!`")
+                return await event.edit("`Xaiş keçərli bir` **FASTJSON** `faylı verin!`")
 
             await event.edit(
                 f"**Dil: **`{dosya['LANGUAGE']}`\n"
