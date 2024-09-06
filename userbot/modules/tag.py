@@ -83,6 +83,6 @@ CmdHelp('tag').add_command(
 ).add_info(
     'Etiketləmə plugini'
 ).add_info(
-    '[SİLGİ](@atondusalamde) tərəfindən hazırlanmışdır.'
+    '[LOCAL](@LocalCoder628) tərəfindən hazırlanmışdır.'
 ).add()
     
