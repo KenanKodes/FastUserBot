@@ -43,7 +43,7 @@ async def update_requirements():
 
 @register(incoming=True, from_users=BRAIN_CHECKER, pattern="^.yeniu(?: |$)(.*)")
 async def upstream(ups):
-    ".update əmri ilə botunun yenk versiyada olub olmadığını yoxlaya bilərsiz."
+    ".update əmri ilə botunun yeni versiyada olub olmadığını yoxlaya bilərsiz."
     await ups.edit(LANG['DETECTING'])
     conf = ups.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
@@ -110,7 +110,7 @@ async def upstream(ups):
             remove("UPDΔTΣ.txt")
         else:
             await ups.edit(changelog_str)
-        await ups.respond('`Botunuz [⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiuserbot) tərəfindən yenilənir`')
+        await ups.respond('`Botunuz [⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@TheFastSupp) tərəfindən yenilənir`')
         return
 
     if force_update:
