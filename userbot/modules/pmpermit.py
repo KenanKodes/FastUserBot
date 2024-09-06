@@ -313,7 +313,7 @@ async def blockpm(block):
         replied_user = await block.client.get_entity(reply.from_id)
         if replied_user.id in BRAIN_CHECKER or replied_user.id in WHITELIST:
             await block.edit(
-                "`[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiuserbot) Adminini bloklaya bilmərəm axı 🥺 Eləmə belə`"
+                "`[⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@TheFastSupp) Adminini bloklaya bilmərəm axı 🥺 Eləmə belə`"
             )
             return
 
