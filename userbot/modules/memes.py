@@ -475,7 +475,7 @@ async def slap(replied_user, event):
     hit = choice(HIT)
     throw = choice(THROW)
 
-    caption = "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ " + temp.format(
+    caption = "⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝ " + temp.format(
         victim=slapped, item=item, hits=hit, throws=throw)
 
     return caption
@@ -932,13 +932,13 @@ CmdHelp('memes').add_command(
 ).add_command(
     'cowsay', None, 'Bir şeylər danışan inək'
 ).add_command(
-    ':/', None, 'Rihad\'ın 3 aydır qızın adını öyrənmədiyi ağlına gəlir.'
+    ':/', None, 'Ayxan\'ın 3 aydır qızın adını öyrənmədiyi ağlına gəlir.'
 ).add_command(
     'qerar', None, 'Qərar verin.'
 ).add_command(
     '-_-', None, 'Tamamdır.\n-Birdənəm ustam'
 ).add_command(
-    ';_;', None, 'Hüseynin\' 5 dəqiqədir qaynanasını görmədiyini düşünün.'
+    ';_;', None, 'Vüqar\' 5 dəqiqədir qaynanasını görmədiyini düşünün.'
 ).add_command(
     'cp', '<cavab>', 'Emoji falan əlavə edir.'
 ).add_command(
