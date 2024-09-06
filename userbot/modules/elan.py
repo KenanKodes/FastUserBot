@@ -30,7 +30,7 @@ async def elan(event):
         else:
             link = "[" + user.first_name + "](" + str(user.id) + ")"
         try:
-            await event.client.send_message(uid, mesaj + "\n\n[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@silgiuserbot) `ilə göndərildi`")
+            await event.client.send_message(uid, mesaj + "\n\n[⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](@FastUserrBot) `ilə göndərildi`")
             son = f"**Son elan göndərilən istifadəçi:** {link}"
         except:
             son = f"**Son elan göndərilən istifadəçi:** **Göndərilə bilmədi!**"
@@ -38,11 +38,11 @@ async def elan(event):
         await event.edit(f"`Bütün istifadəçilərə elan göndərilir...`\n{son}\n\n**Status:** `{a}/{len(all_participants)}`")
         await asyncio.sleep(0.6)
 
-    await event.edit("`Bütün istifadəçilərə elan göndərildi!`\n\n[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](t.me/silgiuserbot)")
+    await event.edit("`Bütün istifadəçilərə elan göndərildi!`\n\n[⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](t.me/TheFastSupp)")
     
 Help = CmdHelp('reklam')
 Help.add_command('reklam', '<mesaj>', 'Qrupdakı bütün istifadəçilərə elan göndərər')
 Help.add_warning('**Məsuliyyət sizə aiddir**').add()
 Help.add_info(
-  '`İstifadəsi üçün admin olmaq lazım deyildir`\n@silgiuserbot'
+  '`İstifadəsi üçün admin olmaq lazım deyildir`\n@FastUserrBot'
 ).add()
