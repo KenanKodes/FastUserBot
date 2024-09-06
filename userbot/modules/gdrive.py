@@ -228,10 +228,10 @@ async def show_current_gdrove_folder(event):
     if parent_id:
         folder_link = f"https://drive.google.com/drive/folders/" + parent_id
         await event.edit(
-            f"DTÖUserBot'um faylları [buraya]({folder_link}) uploadlıyır.")
+            f"FastUserBot'um faylları [buraya]({folder_link}) uploadlıyır.")
     else:
         await event.edit(
-            f"DTÖUserBot'um faylları Google Drive'ın kök qovluğuna uploadlıyır.\
+            f"FastUserBot'um faylları Google Drive'ın kök qovluğuna uploadlıyır.\
             \nUploadlanan fayllar [burada](https://drive.google.com/drive/my-drive)"
         )
 
@@ -284,7 +284,7 @@ async def upload_file(http, file_path, file_name, mime_type, event, parent_id):
     media_body = MediaFileUpload(file_path, mimetype=mime_type, resumable=True)
     body = {
         "title": file_name,
-        "description": "DTÖUserBot işlədilərək yükləndi.",
+        "description": "FastUserBot işlədilərək yükləndi.",
         "mimeType": mime_type,
     }
     if parent_id:
