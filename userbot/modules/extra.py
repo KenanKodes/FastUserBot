@@ -20,7 +20,7 @@ LANG = get_value("extra")
 
 # ████████████████████████████████ #
 
-@register(pattern="^.ttext", outgoing=True)
+@register(pattern="^.oxu", outgoing=True)
 async def doc2text(event):
     doc = await event.client.download_media(await event.get_reply_message())
     fayl = open(doc, "r")
@@ -54,7 +54,7 @@ async def text2doc(event):
         with open(metn, "w") as fayl:
             fayl.write(cvb.message)
         await event.delete()
-        await event.client.send_file(event.chat_id, metn, caption="[⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](t.me/silgiuserbot)", force_document=True)
+        await event.client.send_file(event.chat_id, metn, caption="[⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝](t.me/TheFastSupp)", force_document=True)
         os.remove(metn)
     else:
         await event.edit((LANG['T4']))
