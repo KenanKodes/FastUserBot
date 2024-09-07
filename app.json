@@ -177,7 +177,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Həmişəlik profil biyoqrafiyası.",
-      "value": "⚝ 𝑺𝑰𝑳𝑮𝑰 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝",
+      "value": "⚝ 𝑭𝑨𝑺𝑻 𝑼𝑺𝑬𝑹𝑩𝑶𝑻 ⚝",
       "required": false
     },
     "G_DRIVE_CLIENT_SECRET": {
