@@ -7,7 +7,7 @@ import requests
 from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 from telethon.tl.functions.channels import GetMessagesRequest
-from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, DTO_VERSION, PATTERNS
+from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, FAST_VERSION, PATTERNS
 from .modules import ALL_MODULES
 import userbot.modules.sql_helper.mesaj_sql as MSJ_SQL
 import userbot.modules.sql_helper.galeri_sql as GALERI_SQL
@@ -231,7 +231,7 @@ for module_name in ALL_MODULES:
 
 LOGS.info("Botunuz işleyir! Her hansi bir söhbete .alive yazaraq Test edin."
           " Yardıma ehtiyacınız varsa, Dəstək qrupumuza buyurun t.me/TheFastSupp")
-LOGS.info(f"Bot versiyası: ⚝ ƒᴀѕᴛυѕᴇʀϐᴏᴛ ⚝🇦🇿 {DTO_VERSION}")
+LOGS.info(f"Bot versiyası: ⚝ ƒᴀѕᴛυѕᴇʀϐᴏᴛ ⚝🇦🇿 {FAST_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
