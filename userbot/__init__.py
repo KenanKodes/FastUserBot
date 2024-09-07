@@ -58,8 +58,8 @@ if not LANGUAGE in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LOGS.info("Bilinməyən bir dil seçdiniz. Buna görə DEFAULT işlədilir.")
     LANGUAGE = "DEFAULT"
     
-# DTÖ Versiyası
-DTO_VERSION = "3.1"
+# FAST Versiyası
+FAST_VERSION = "3.1"
 
 # Telegram API KEY ve HASH
 API_KEY = os.environ.get("API_KEY", None)
