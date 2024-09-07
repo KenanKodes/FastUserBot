@@ -230,7 +230,7 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info("Botunuz işleyir! Her hansi bir söhbete .alive yazaraq Test edin."
-          " Yardıma ehtiyacınız varsa, Dəstək qrupumuza buyurun t.me/silgiuserbot")
+          " Yardıma ehtiyacınız varsa, Dəstək qrupumuza buyurun t.me/TheFastSupp")
 LOGS.info(f"Bot versiyası: ⚝ ƒᴀѕᴛυѕᴇʀϐᴏᴛ ⚝🇦🇿 {FAST_VERSION}")
 
 """
