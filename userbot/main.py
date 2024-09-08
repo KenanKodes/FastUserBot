@@ -8,7 +8,6 @@ from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 from telethon.tl.functions.channels import GetMessagesRequest
 from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, FAST_VERSION, PATTERNS
-import userbot.modules.sql_helper.galeri_sql as GALERI_SQL
 from .modules import ALL_MODULES
 from pySmartDL import SmartDL
 from telethon.tl import functions
